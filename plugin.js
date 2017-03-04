@@ -11,7 +11,7 @@ const add = async function (context) {
   await ignite.addModule(NPM_MODULE_NAME, { link: true })
 
   // copy the example file (if examples are turned on)
-  await ignite.addComponentExample(EXAMPLE_FILE, { title: 'Vector Icons' })
+  await ignite.addPluginComponentExample(EXAMPLE_FILE, { title: 'Vector Icons' })
 }
 
 /**
@@ -24,7 +24,7 @@ const remove = async function (context) {
   await ignite.removeModule(NPM_MODULE_NAME, { unlink: true })
 
   // remove the component example
-  await ignite.removeComponentExample(EXAMPLE_FILE)
+  await ignite.removePluginComponentExample(EXAMPLE_FILE)
 }
 
 /**
