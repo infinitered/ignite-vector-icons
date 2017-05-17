@@ -1,5 +1,7 @@
 # ignite-vector-icons
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/infinitered/ignite-vector-icons.svg)](https://greenkeeper.io/)
+
 An [ignite plugin](https://github.com/infinitered/ignite) for [react-native-vector-icons](https://github.com/oblador/react-native-vector-icons).
 
 ## Premium Support
