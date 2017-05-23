@@ -15,5 +15,5 @@ test('removes itself', async t => {
 
   await plugin.remove(context)
   t.true(removeModule.calledWith('react-native-vector-icons', { unlink: true }))
-  t.true(removePluginComponentExample.calledWith('vectorExample.js'))
+  t.true(removePluginComponentExample.calledWith('vectorExample.js.ejs'))
 })

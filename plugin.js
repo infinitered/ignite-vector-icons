@@ -1,5 +1,5 @@
 const NPM_MODULE_NAME = 'react-native-vector-icons'
-const EXAMPLE_FILE = 'vectorExample.js'
+const EXAMPLE_FILE = 'vectorExample.js.ejs'
 
 /**
  * Add ourself to the project.
@@ -8,7 +8,7 @@ const add = async function (context) {
   const { ignite } = context
 
   // install a npm module
-  await ignite.addModule(NPM_MODULE_NAME, { link: true })
+  await ignite.addModule(NPM_MODULE_NAME, { version: '4.1.1', link: true })
 
   // copy the example file (if examples are turned on)
   await ignite.addPluginComponentExample(EXAMPLE_FILE, { title: 'Vector Icons' })
