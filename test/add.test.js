@@ -14,9 +14,9 @@ test('adds itself', async t => {
   }
 
   await plugin.add(context)
-  t.true(addModule.calledWith('react-native-vector-icons', { link: true }))
+  t.true(addModule.calledWith('react-native-vector-icons', { version: '4.1.1', link: true }))
   t.true(
-    addPluginComponentExample.calledWith('vectorExample.js', {
+    addPluginComponentExample.calledWith('vectorExample.js.ejs', {
       title: 'Vector Icons'
     })
   )
