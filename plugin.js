@@ -8,7 +8,7 @@ const add = async function (context) {
   const { ignite } = context
 
   // install a npm module
-  await ignite.addModule(NPM_MODULE_NAME, { version: '4.3.0', link: true })
+  await ignite.addModule(NPM_MODULE_NAME, { version: '4.4.2', link: true })
 
   // copy the example file (if examples are turned on)
   await ignite.addPluginComponentExample(EXAMPLE_FILE, { title: 'Vector Icons' })
